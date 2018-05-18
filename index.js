@@ -1,35 +1,34 @@
+
 var uppercase = "Hello!"
 var lowercase = "hello!"
+function shout(string) {
+  return string.toUpperCase()
+}
 
-function shout(string){
-  uppercase = string.toUpperCase();
-  string = uppercase;
-  return uppercase;
+function whisper(string) {
+  return string.toLowerCase()
 }
-function whisper(string){
-  lowercase = string.toLowerCase();
-  string = lowercase;
-  return lowercase;
+
+function logShout(string) {
+  return console.log(string.toUpperCase())
 }
-function logShout(string){
-  uppercase = string.toUpperCase()
-  string = uppercase;
-  console.log(uppercase);
-  
+
+function logWhisper(string) {
+   return console.log(string.toLowerCase())
 }
-function logWhisper(string){
-  lowercase = string.toLowerCase()
-  string = uppercase;
-  console.log(lowercase);
-}
-function sayHiToGrandma(string){
-	if (string.toLowerCase() === string){
-	  return 'I can\'t hear you!';
-	}
-	if (string.toUpperCase() === string){
-	  return 'YES INDEED!';
-	}
-	if (string === 'I love you, Grandma.'){
-	  return 'I love you, too.';
-	}
+
+function sayHiToGrandma(string) {
+  if (string.toLowerCase() === string) {
+    return "I can't hear you!"
+  }
+
+  if (string.toUpperCase() === string) {
+    return "YES INDEED!"
+  }
+
+  if (string === "I love you, Grandma.") {
+    return "I love you, too."
+  }
+
+  return "Are you eating enough?"
 }
